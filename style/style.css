@@ -1,357 +1,396 @@
 body {
-    font-family: 'EB Garamond', serif;
-    background: #A9C6DD; /* Softer light blue for better contrast */
-    color: #333;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  font-family: "EB Garamond", serif;
+  background: #a9c6dd; /* Softer light blue for better contrast */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* Header */
-header {
-    background: #88B7D5;
-    color: black;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    height: 60px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.menu {
+  background-color: #88b7d5;
+  font-size: 1rem;
+  height: 3.8rem;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  z-index: 100;
 }
 
 /* Navigation Links */
 .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links a {
-    color: black;
-    text-decoration: none;
-    font-size: 0.9em;
-    font-weight: bold;
-    transition: 0.3s;
+  color: black;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Right-aligned 30MFF */
 .right-logo {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    position: absolute;
-    right: 140px; /* Adjusted position */
-    top: 40px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  /* position: absolute; */
+}
+
+.right-logo-2 {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  /* position: absolute; */
 }
 
 /* Main Content */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    width: 100%;
-    margin-top: 100px; /* Pushes content lower */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  width: 80%;
+  margin-top: 100px; /* Pushes content lower */
 }
 
 .main-content h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 10px;
 }
 
 .main-content p {
-    font-size: 1.2em;
-    color: #333;
-    max-width: 600px;
-    line-height: 1.5;
+  font-size: 1.2em;
+  color: #333;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.main-content iframe {
+  width: 100%;
+  height: 56.25vw;
 }
 
 /* Profile Image Styling */
 .profile-image {
-    width: 450px;
-    height: 450px;
-    border-radius: 60%;
-    display: block;
-    margin: 70px auto; /* Fixing typo: '70x' -> '70px' */
-    object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  height: 450px;
+  border-radius: 60%;
+  display: block;
+  margin: 70px auto; /* Fixing typo: '70x' -> '70px' */
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    width: 100%;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 100%;
 }
-
 
 /* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
-    .main-content h1 { font-size: 2.2em; }
-    .nav-links a, .right-logo { font-size: 0.8em; }
-    .right-logo { right: 40px; }
+  .main-content h1 {
+    font-size: 2.2em;
+  }
+  .nav-links a,
+  .right-logo {
+    font-size: 0.8em;
+  }
+  .right-logo {
+    right: 40px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .profile-image {
-        width: 300px;
-        height: 300px;
-        margin-top: 60px;
-    }
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+  }
 }
 
 /* Bio Text */
 .bio-text {
-    font-size: 1.2em;
-    color: black;
-    text-align: center;
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 15px;
-    line-height: 1.6;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px;
+  line-height: 1.6;
 }
 
 /* LinkedIn & GitHub Links */
 .bio-text a {
-    color: #0044cc;
-    font-weight: bold;
-    text-decoration: none;
+  color: #0044cc;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .bio-text a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Index Content Layout */
 .index-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 100px auto;
-    gap: 30px;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 100px auto;
+  gap: 30px;
+  padding: 20px;
 }
 
 .text-section {
-    width: 50%;
-    text-align: left;
+  width: 50%;
+  text-align: left;
 }
 
 /* Joy Image Floating at the Top */
 .joy-top {
-    position: absolute;
-    top: 100px;
-    left: 80%;
-    transform: translateX(-50%);
-    z-index: 10;
+  position: absolute;
+  top: 3rem;
+  left: 75%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .joy-top img {
-    width: 140px;
-    max-width: 100%;
-    animation: floatAnimation 3s ease-in-out infinite;
+  width: 150px;
+  max-width: 300%;
+  animation: floatAnimation 3s ease-in-out infinite;
 }
 
 /* Floating effect */
 @keyframes floatAnimation {
-    0% { transform: translate(-50%, 0px); }
-    50% { transform: translate(-50%, -10px); }
-    100% { transform: translate(-50%, 0px); }
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    transform: translate(-50%, 0px);
+  }
 }
 
 /* Why Joy Section */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
 .why-text {
-    text-align: center;
-    max-width: 800px;
-    margin: 180px auto 20px;
-    font-size: 1.3em;
-    line-height: 1.6;
-    font-weight: 500;
+  text-align: center;
+  max-width: 90%;
+  margin: 180px auto 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 .why-text h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
 }
 
 .why-text strong {
-    color: #004085;
+  color: #004085;
 }
 
 .slide img:hover {
-    transform: scale(1.02); /* Slight zoom on hover for interactivity */
+  transform: scale(1.02); /* Slight zoom on hover for interactivity */
 }
 
 /* Slideshow Container - Increased Space Around */
 .slideshow-container {
-    width: 80%;
-    max-width: 700px; /* Keeps it balanced */
-    margin: 100px auto 150px; /* More top & bottom spacing */
-    padding: 20px; /* Adds padding inside the container */
-    position: relative;
-    text-align: center;
+  width: 100%;
+  max-width: 60%; /* Keeps it balanced */
+  margin: 100px auto 150px; /* More top & bottom spacing */
+  padding: 10px; /* Adds padding inside the container */
+  position: relative;
+  text-align: center;
+  left: -0%;
+  bottom: 10%;
 }
 
 /* Center the images & add breathing room */
 .slide img {
-    width: 100%;
-    border-radius: 15px; /* Smooth edges */
-    padding: 10px; /* Extra space inside */
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 15px; /* Smooth edges */
+  padding: 10px; /* Extra space inside */
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Improved Navigation Buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 20px; /* Slightly bigger arrows */
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius:80%;
-    user-select: none;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 20px; /* Slightly bigger arrows */
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 80%;
+  user-select: none;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 /* Left and Right Button Positioning */
-.prev { left: -80px; }  /* Moves arrows further out */
-.next { right: -80px; }
+.prev {
+  left: -80px;
+} /* Moves arrows further out */
+.next {
+  right: -80px;
+}
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: scale(1.2); /* Bigger hover effect */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.2); /* Bigger hover effect */
 }
 
 /* Extra Space Below for More Visual Balance */
 @media screen and (max-width: 800px) {
-    .prev { left: -50px; }
-    .next { right: -50px; }
+  .prev {
+    left: -1.2rem;
+  }
+  .next {
+    right: -1.7rem;
+  }
 }
 
 /* GIF and Text Container */
 .gif-text-container {
-    display: flex; /* Makes it a side-by-side layout */
-    align-items: center; /* Aligns items vertically */
-    justify-content: space-between; /* Ensures equal spacing */
-    max-width: 900px; /* Controls max width */
-    margin: 50px auto; /* Centers the container */
-    padding: 20px;
-    gap: 40px; /* Adds space between GIF and text */
+  display: flex; /* Makes it a side-by-side layout */
+  align-items: center; /* Aligns items vertically */
+  justify-content: space-between; /* Ensures equal spacing */
+  max-width: 900px; /* Controls max width */
+  margin: 50px auto; /* Centers the container */
+  padding: 20px;
+  gap: 40px; /* Adds space between GIF and text */
 }
 
 /* GIF Styling */
 .gif-container {
-    flex: 0.5; /* Adjusts the size */
+  flex: 0.5; /* Adjusts the size */
 }
 
 .gif-container img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 350px; /* Controls the max size */
-    height: auto;
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
-}
-
-/* Text Styling */
-.text-container {
-    flex: 1; /* Makes text take available space */
-    text-align: justify; /* Justifies the text */
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-    font-weight: 500;
-    max-width: 500px; /* Prevents text from being too stretched */
+  width: 100%; /* Makes the image responsive */
+  max-width: 350px; /* Controls the max size */
+  height: auto;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-    .gif-text-container {
-        flex-direction: column; /* Stacks elements vertically on small screens */
-        text-align: center;
-    }
+@media screen and (max-width: 450px) {
+  .right-logo {
+    display: none;
+  }
 
-    .gif-container img {
-        width: 80%; /* Makes the GIF smaller for mobile */
-    }
+  .nav-links {
+    display: flex;
+    gap: 3rem;
+  }
+}
 
-    .text-container {
-        max-width: 100%;
-        text-align: justify; /* Ensures text is still justified */
-    }
+@media screen and (max-width: 468px) {
+  .gif-text-container {
+    flex-direction: column; /* Stacks elements vertically on small screens */
+    text-align: center;
+  }
+
+  .gif-container img {
+    width: 80%; /* Makes the GIF smaller for mobile */
+  }
+
+  .text-container {
+    max-width: 100%;
+    text-align: justify; /* Ensures text is still justified */
+  }
 }
 
 /* Container for Why Joy Section */
 .why-container {
-    display: flex; /* Side-by-side layout */
-    align-items: center; /* Centers items vertically */
-    justify-content: space-between; /* Space between GIF and text */
-    max-width: 1000px; /* Limits width */
-    margin: 50px auto; /* Centers content on the page */
-    padding: 20px;
-    gap: 40px; /* Adds spacing between GIF and text */
+  display: flex; /* Side-by-side layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: space-between; /* Space between GIF and text */
+  max-width: 1000px; /* Limits width */
+  margin: 50px auto; /* Centers content on the page */
+  padding: 20px;
+  gap: 40px; /* Adds spacing between GIF and text */
 }
 
 /* Left: GIF Styling */
 .gif-container {
-    flex: 1; /* Takes up available space */
-    display: flex;
-    justify-content: center; /* Centers the GIF */
+  flex: 1; /* Takes up available space */
+  display: flex;
+  justify-content: center; /* Centers the GIF */
 }
 
 .why-image {
-    width: 100%;
-    max-width: 350px; /* Controls GIF size */
-    border-radius: 15px; /* Soft rounded edges */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth */
+  width: 100%;
+  max-width: 350px; /* Controls GIF size */
+  border-radius: 15px; /* Soft rounded edges */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
 /* Right: Text Styling */
 .text-container {
-    flex: 1.5; /* Text section is slightly larger */
-    text-align: justify; /* Justifies text */
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-    font-weight: 500;
+  flex: 1.5; /* Text section is slightly larger */
+  text-align: justify; /* Justifies text */
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 500;
 }
 
 /* Responsive Design: Stack GIF & Text for Small Screens */
 @media screen and (max-width: 768px) {
-    .why-container {
-        flex-direction: column; /* Stacks items */
-        text-align: center;
-    }
+  .why-container {
+    flex-direction: column; /* Stacks items */
+    text-align: center;
+  }
 
-    .gif-container {
-        margin-bottom: 20px; /* Adds spacing below GIF */
-    }
+  .gif-container {
+    margin-bottom: 20px; /* Adds spacing below GIF */
+  }
 
-    .text-container {
-        max-width: 100%;
-    }
+  .text-container {
+    max-width: 100%;
+  }
 }
-
