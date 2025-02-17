@@ -1,7 +1,8 @@
+
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide");
 
-// Function to show the current slide
+// Function that shows the current slide
 function showSlides() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -9,7 +10,7 @@ function showSlides() {
   slides[slideIndex].style.display = "block";
 }
 
-// Function to change slides when clicking buttons
+// Function that changes the slides when clicking buttons. 
 function plusSlides(n) {
   slideIndex += n;
 
