@@ -2,7 +2,6 @@
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide");
 
-// Function that shows the current slide
 function showSlides() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -10,11 +9,11 @@ function showSlides() {
   slides[slideIndex].style.display = "block";
 }
 
-// Function that changes the slides when clicking buttons. 
+
 function plusSlides(n) {
   slideIndex += n;
 
-  // Loop around if going past first or last slide
+
   if (slideIndex >= slides.length) {
     slideIndex = 0;
   }
@@ -25,5 +24,5 @@ function plusSlides(n) {
   showSlides();
 }
 
-// Initialize slideshow with the first image
+
 showSlides();
