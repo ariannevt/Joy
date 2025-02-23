@@ -44,7 +44,6 @@ body {
   text-decoration: underline;
 }
 
-//30MFF Right-Alligned
 .right-logo {
   font-size: 1em;
   font-weight: bold;
@@ -61,7 +60,7 @@ body {
   
 }
 
-//Main Content
+
 .main-content {
   display: flex;
   flex-direction: column;
@@ -92,7 +91,7 @@ body {
   height: 56.25vw;
 }
 
-//Profile Image Styling
+
 .profile-image {
   width: 450px;
   height: 450px;
@@ -110,7 +109,7 @@ body {
   width: 100%;
 }
 
-//Responsive Adjustments
+
 @media screen and (max-width: 1024px) {
   .main-content h1 {
     font-size: 2.2em;
@@ -132,7 +131,7 @@ body {
   }
 }
 
-//Bio Text 
+
 .bio-text {
   font-size: 1.2em;
   color: black;
@@ -143,7 +142,7 @@ body {
   line-height: 1.6;
 }
 
-//LinkedIn & GitHub Links
+
 .bio-text a {
   color: #0044cc;
   font-weight: bold;
@@ -170,7 +169,7 @@ body {
   text-align: left;
 }
 
-//Joy Image Floating at the Top
+
 .joy-top {
   position: absolute;
   top: 3rem;
@@ -185,7 +184,6 @@ body {
   animation: floatAnimation 3s ease-in-out infinite;
 }
 
-//Floating effect
 @keyframes floatAnimation {
   0% {
     transform: translate(-50%, 0px);
@@ -198,7 +196,6 @@ body {
   }
 }
 
-//Why Joy Section
 
 .text-container {
   display: flex;
@@ -232,7 +229,7 @@ body {
   transform: scale(1.02);
 }
 
-//Slideshow Container
+
 .slideshow-container {
   width: 100%;
   max-width: 60%; 
@@ -244,7 +241,7 @@ body {
   bottom: 10%;
 }
 
-//Center the images & add breathing room 
+
 .slide img {
   width: 100%;
   border-radius: 15px; 
@@ -252,7 +249,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-//Improved Navigation Buttons 
 .prev,
 .next {
   position: absolute;
@@ -268,7 +264,7 @@ body {
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-//Position for Left and Right Button
+
 .prev {
   left: -80px;
 } 
@@ -291,7 +287,6 @@ body {
   }
 }
 
-//GIF & Text Container
 .gif-text-container {
   display: flex; /* Makes it a side-by-side layout */
   align-items: center; /* Aligns items vertically */
@@ -302,7 +297,7 @@ body {
   gap: 40px; /* Adds space between GIF and text */
 }
 
-// GIF Styling
+
 .gif-container {
   flex: 0.5; /* Adjusts the size */
 }
@@ -315,7 +310,7 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
-//Responsive Design
+
 @media screen and (max-width: 450px) {
   .right-logo {
     display: none;
@@ -343,7 +338,7 @@ body {
   }
 }
 
-//Container for Why Joy Section 
+
 .why-container {
   display: flex; 
   align-items: center; 
@@ -376,7 +371,6 @@ body {
   font-weight: 500;
 }
 
-//Responsive Design
 @media screen and (max-width: 768px) {
   .why-container {
     flex-direction: column; /* Stacks items */
